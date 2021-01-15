@@ -1,0 +1,129 @@
+0x20:
+    name: Header
+    length: 120
+0x21:
+    name: Status
+    length: 7
+    fields:
+        status: 1
+        activity_code: 1
+        timestamp: 4
+0x22:
+    name: GPS
+    length: 28
+    fields:
+        latitude: 4
+        longitude: 4
+        heading: 2
+        speed: 2
+        timestamp: 4
+        calories: 2
+        filtered speed: 4
+        distance: 4
+        cycles: 1
+0x23:
+    name: Extended GPS
+    length: 24
+    tags:
+        Estimated Vertical Error (cm): 2
+        Estimated Horizontal Error (cm): 2
+        Horizontal Precision Dilution: 1
+        Unknown 1: 4
+        Unknown 2: 4
+        Unknown 3: 4
+        Unknown 4: 1
+        Unknown 5: 1
+        Unknown 6: 4
+0x25:
+    name: Heart Rate
+    length: 7
+0x27:
+    name: Summary
+    length: 18
+0x2A:
+    name: Pool Size (cm)
+    length: 5
+0x2B:
+    name: Wheel Size (mm)
+    length: 5
+0x2D:
+    name: Training Setup
+    length: 10
+0x2F:
+    name: Lap
+    length: 11
+0x30:
+    name: 0x30 (Unknown)
+    length: 3
+0x31:
+    name: Cycling Cadence
+    length: 11
+0x32:
+    name: Treadmill
+    length: 17
+0x34:
+    name: Swim
+    length: 21
+0x35:
+    name: 0x35 (Unknown)
+    length: 6
+0x37:
+    name: 0x37 (Unknown)
+    length: 2
+0x39:
+    name: Interval Setup
+    length: 22
+0x3A:
+    name: Interval Start
+    length: 3
+0x3B:
+    name: Interval Finish
+    length: 14
+0x3C:
+    name: Race Setup
+    length: 41
+0x3D:
+    name: Race Result
+    length: 11
+0x3F:
+    name: Heart Rate Recovery
+    length: 9
+0x40:
+    name: Indoor Cycling
+    length: 12
+0x41:
+    name: Gym
+    length: 11
+0x42:
+    name: Movement
+    length: 2
+0x43:
+    name: 0x43 (Unknown)
+    length: 15
+0x44:
+    name: Route Description
+    length: 101
+0x45:
+    name: 0x45 (Unknown)
+    length: 32
+0x46:
+    name: 0x46 (Unknown)
+    length: 8
+0x47:
+    name: Elevation
+    length: 12
+0x48:
+    name: 0x48 (Unknown)
+    length: 15
+0x49:
+    name: Battery
+    length: 5
+    fields:
+        Level: 1
+        Unknown1: 1
+        Unknown2: 1
+        Unknown3: 1
+
+0x4A:
+    name: Fitnesspoints
+    length: 9
